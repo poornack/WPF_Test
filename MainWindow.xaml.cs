@@ -24,5 +24,15 @@ namespace WPF_Test
         {
             InitializeComponent();
         }
+
+        public void WriteLine(String input)
+        {
+            this.Local_Console.AppendText(input + "\n");
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            WriteLine("Button pushed");
+        }
     }
 }
